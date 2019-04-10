@@ -52,6 +52,7 @@ public class ClaimController implements Initializable {
     @FXML
     private void show(ActionEvent event) throws IOException {
         FXRouter.goTo("myclaims"); 
+        System.out.println("msg");
     }
     
 }
