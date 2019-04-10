@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="364.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.solucfx.ShowAdminResponseController">
+   <children>
+      <Pane layoutX="7.0" layoutY="5.0" prefHeight="359.0" prefWidth="698.0" style="-fx-background-color: #B3776B;">
+         <children>
+            <Label layoutX="24.0" layoutY="14.0" prefHeight="30.0" prefWidth="239.0" text="The admin response" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </Label>
+            <Text fx:id="textClaim" fill="WHITE" layoutX="105.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="32.13671875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow color="#014d4c" height="47.69" radius="26.31" width="59.55" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

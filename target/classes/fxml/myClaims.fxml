@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchore" prefHeight="435.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.solucfx.myClaimsController">
+   <children>
+      <Pane layoutX="27.0" layoutY="18.0" prefHeight="433.0" prefWidth="698.0" style="-fx-background-color: #AABFB9;">
+         <children>
+            <Label layoutX="24.0" layoutY="14.0" prefHeight="30.0" prefWidth="239.0" text="My claims" textFill="#7c215f" underline="true">
+               <font>
+                  <Font name="Book Antiqua Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="516.0" layoutY="314.0" mnemonicParsing="false" onAction="#editButton" prefHeight="25.0" prefWidth="108.0" text="Edit claim" />
+            <TableView fx:id="claimTab" layoutX="24.0" layoutY="68.0" onMouseClicked="#showClaims" prefHeight="200.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="date" prefWidth="197.0" text="Date" />
+                  <TableColumn fx:id="state" minWidth="4.0" prefWidth="191.0" text="State" />
+                  <TableColumn fx:id="type" prefWidth="211.0" text="Type" />
+              </columns>
+            </TableView>
+            <Button fx:id="deletBtn" layoutX="390.0" layoutY="314.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="25.0" prefWidth="108.0" text="Delete claim" />
+            <Button fx:id="showResBtn" layoutX="263.0" layoutY="314.0" mnemonicParsing="false" onAction="#responseBtn" prefHeight="25.0" prefWidth="108.0" text="Show response" />
+         </children>
+         <effect>
+            <DropShadow color="#014d4c" height="47.69" radius="26.31" width="59.55" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
